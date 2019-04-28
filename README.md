@@ -1,2 +1,12 @@
-# nodejs-notes-app
-Note taking app built with NodeJS
+
+# NodeJS Note Taking App
+**Project Description**
+This project was made to practice NodeJs and is part of a Udemy course by Andrew Mead.
+Live Link: [Note Taking App](#).
+
+## Feature List
+
+## What I've learned
+  * What is NodeJS, How it works and why to use it.
+  * Working with npm package validator.js
+  * 
