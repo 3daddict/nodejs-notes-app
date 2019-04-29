@@ -9,4 +9,5 @@ Live Link: [Note Taking App](#).
 ## What I've learned
   * What is NodeJS, How it works and why to use it.
   * Working with npm package validator.js
-  * 
+  * process.argv[2]
+  *
