@@ -7,11 +7,19 @@ const fs = require('fs');
 // const bookJSON = JSON.stringify(book);
 // fs.writeFileSync('1-json.json', bookJSON);
 
-//read the file in getting binary data
-const dataBuffer = fs.readFileSync('1-json.json');
-//convert the binary data into a js string
-const dataJSON = dataBuffer.toString();
-//parsed the json data into object and accessed property using dot notation.
-const data = JSON.parse(dataJSON);
+// //read the file in getting binary data
+// const dataBuffer = fs.readFileSync('1-json.json');
+// //convert the binary data into a js string
+// const dataJSON = dataBuffer.toString();
+// //parsed the json data into object and accessed property using dot notation.
+// const data = JSON.parse(dataJSON);
 
-console.log(data.title);
+// console.log(data.title);
+
+const dataBuffer = fs.readFileSync('1-json.json');
+const dataJSON = dataBuffer.toString();
+const data = JSON.parse(dataJSON);
+data.name = "mike";
+data.age = 36
+
+console.log(data);
