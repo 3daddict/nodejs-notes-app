@@ -12,4 +12,5 @@ Live Link: [Note Taking App](#).
   * process.argv[2]
   * yargs and creating commands
   * ES6 Fat Arrow Functions and how this works
+  * forEach, filter and find JS methods
   * 
