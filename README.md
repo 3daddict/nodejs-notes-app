@@ -10,5 +10,7 @@ Live Link: [Note Taking App](#).
   * What is NodeJS, How it works and why to use it.
   * Working with npm package validator.js
   * process.argv[2]
-  * yargs
+  * yargs and creating commands
+  * ES6 Fat Arrow Functions and how this works
+  * forEach, filter and find JS methods
   * 
