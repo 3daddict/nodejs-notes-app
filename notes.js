@@ -47,6 +47,18 @@ const listNotes = () => {
     });
 }
 
+const readNote = (title) => {
+    const notes = loadNotes();
+    const note = notes.find((note) => note.title === title);
+    
+    if(note) {
+        console.log(chalk.inverse(note.title));
+        console.log(note.body);
+    } else {
+        console.log(chalk.red.inverse('Note not found!'));
+    }
+}
+
 //Function to take in notes array and save to new file with updated data
 const saveNotes = (notes) => {
     const dataJSON = JSON.stringify(notes);
@@ -68,5 +80,6 @@ module.exports = {
     getNotes,
     addNote,
     removeNote,
-    listNotes
+    listNotes,
+    readNote
 };
