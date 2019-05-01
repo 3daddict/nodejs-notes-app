@@ -37,6 +37,13 @@ const removeNote = (title) => {
     }
 }
 
+const listNotes = () => {
+    const notes = loadNotes();
+    notes.forEach((note) => {
+        console.log(note.title);
+    });
+}
+
 //Function to take in notes array and save to new file with updated data
 const saveNotes = (notes) => {
     const dataJSON = JSON.stringify(notes);
@@ -57,5 +64,6 @@ const loadNotes = () => {
 module.exports = {
     getNotes,
     addNote,
-    removeNote
+    removeNote,
+    listNotes
 };
