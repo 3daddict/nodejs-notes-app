@@ -56,7 +56,7 @@ const readNote = (title) => {
 //Function to take in notes array and save to new file with updated data
 const saveNotes = (notes) => {
     const dataJSON = JSON.stringify(notes);
-    fs.writeFileSync('notes.json', dataJsON);
+    fs.writeFileSync('notes.json', dataJSON);
 }
 
 const loadNotes = () => {
