@@ -1,10 +1,6 @@
 const chalk = require('chalk');
 const fs = require('fs');
 
-const getNotes = () => {
-    return 'Your notes...'
-};
-
 const addNote = (title, body) => {
     const notes = loadNotes();
     //filter method will cycle through entire array regardless of if duplicate is found
@@ -23,8 +19,6 @@ const addNote = (title, body) => {
     } else {
         console.log('Note title already taken!');
     }
-
-    
 }
 
 const removeNote = (title) => {
@@ -73,11 +67,9 @@ const loadNotes = () => {
     } catch (e) {
         return [];
     }
-    
 }
 
 module.exports = {
-    getNotes,
     addNote,
     removeNote,
     listNotes,
