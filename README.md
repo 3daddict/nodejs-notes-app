@@ -13,4 +13,5 @@ Live Link: [Note Taking App](#).
   * yargs and creating commands
   * ES6 Fat Arrow Functions and how this works
   * forEach, filter and find JS methods
-  * 
+  * Debugger and Chrome Inspect
+  *

@@ -1,10 +1,6 @@
 const chalk = require('chalk');
 const fs = require('fs');
 
-const getNotes = () => {
-    return 'Your notes...'
-};
-
 const addNote = (title, body) => {
     const notes = loadNotes();
     //filter method will cycle through entire array regardless of if duplicate is found
@@ -23,8 +19,6 @@ const addNote = (title, body) => {
     } else {
         console.log('Note title already taken!');
     }
-
-    
 }
 
 const removeNote = (title) => {
@@ -62,7 +56,7 @@ const readNote = (title) => {
 //Function to take in notes array and save to new file with updated data
 const saveNotes = (notes) => {
     const dataJSON = JSON.stringify(notes);
-    fs.writeFileSync('notes.json', dataJSON);
+    fs.writeFileSync('notes.json', dataJsON);
 }
 
 const loadNotes = () => {
@@ -73,11 +67,9 @@ const loadNotes = () => {
     } catch (e) {
         return [];
     }
-    
 }
 
 module.exports = {
-    getNotes,
     addNote,
     removeNote,
     listNotes,
